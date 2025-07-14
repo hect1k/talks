@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>The Invisible You: Privacy, Security and Ethics in the Data Age</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script defer src="https://umami.nnisarg.in/script.js" data-website-id="a93e41d3-7efb-49c2-b639-fd5dea0d94d5"
+    data-domains="talks.nnisarg.in"></script>
+
+  <!-- reveal.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.2/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@latest/dist/theme/night.css" id="theme">
+  <!-- Highlight.js theme -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@latest/plugin/highlight/monokai.css">
+  <!-- Chalkboard plugin styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/customcontrols/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chalkboard/style.css">
+  <!-- Two-column and theorem styles -->
+  <style>
+    .reveal .slides section .container {
+      display: flex;
+    }
+
+    .reveal .slides section .container .col {
+      flex: 1;
+      padding: 0 1em;
+    }
+
+    .accent {
+      color: #e7ad52;
+    }
+
+    a {
+      text-decoration: underline !important;
+    }
+
+    p {
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <section>
+        <h2>The Invisible You</h2>
+        <h3>Privacy, Security and Ethics in the Data Age</h3>
+        <p style="margin-top: 2em; text-align: center;">Nnisarg Gada - <a href="https://nnisarg.in/"
+            title="Nnisarg's Personal Website" target="_blank">nnisarg.in</a></p>
+        <p style="text-align: center;"><em>Cyber Defense and Incidence Response at KPMG</em></p>
+      </section>
+
+      <section>
+        <h2>The World You Inherit</h2>
+        <div class="container">
+          <div class="col">
+            <p>
+              <small>
+                You've grown up inside a machine - a world where every click, scroll, pause, and purchase is quietly
+                recorded. In this Data Age, you are both the user and the product: your behavior is harvested, analyzed,
+                and sold to shape your decisions before you even make them. This isn't just convenience; it's
+                <strong>Surveillance Capitalism</strong> - a system where your attention, preferences, and even your
+                emotions are
+                monetized, often without your awareness or consent.
+              </small>
+            </p>
+          </div>
+          <div class="col">
+            <img src="https://digitaltattoo.ubc.ca/files/2019/10/800px-Surveillance_video_cameras_Gdynia.jpeg"
+              alt="Surveillance Capitalism" style="width: 100%; height: 100%; object-fit: cover">
+          </div>
+        </div>
+      </section>
+
+      <section data-auto-animate>
+        <h2><a href="http://www.catb.org/~esr/faqs/hacker-howto.html" title="Hacker Howto" target="_blank">Hacker</a>
+        </h2>
+      </section>
+      <section data-auto-animate>
+        <h2><a href="http://www.catb.org/~esr/faqs/hacker-howto.html" title="Hacker Howto" target="_blank">Hacker</a>
+        </h2>
+        <p><strong>
+            <center>Curiosity is a <span class="accent"><u>SUPERPOWER</u></span></center>
+          </strong>
+        </p>
+        <ul>
+          <li class="fragment"><strong>Hacker ≠ Criminal. Hacker = Explorer.</strong></li>
+          <li class="fragment">Don't just use tools - <em>break them, rebuild them, understand them.</em></li>
+          <li class="fragment">Learn from the source - <em>read source code, inspect system logs, observe low-level
+              behavior.</em></li>
+          <li class="fragment">Embrace the mindset - <em>tinker, question, dig deeper.</em></li>
+        </ul>
+      </section>
+      <section data-auto-animate>
+        <h2><a href="http://www.catb.org/~esr/faqs/hacker-howto.html" title="Hacker Howto" target="_blank">Hacker</a>
+        </h2>
+        <ul class="fragment">
+          <small>
+            <li>Hacker
+              Howto - <a href="http://www.catb.org/~esr/faqs/hacker-howto.html" title="Hacker Howto"
+                target="_blank">catb.org/~esr/faqs/hacker-howto.html</a>
+            </li>
+            <li>The Hacker Manifesto - <a href="https://www.mit.edu/hacker/hacker.html" title="The Hacker Manifesto"
+                target="_blank">mit.edu/hacker/hacker.html</a></li>
+            <li>Philosophy of the GNU Project - <a href="https://www.gnu.org/philosophy/philosophy.html"
+                title="The UNIX Philosophy" target="_blank">gnu.org/philosophy/philosophy.html</a></li>
+          </small>
+        </ul>
+      </section>
+
+      <section>
+        <h2>System Curiosity in Action</h2>
+        <pre><code class="language-bash">strace -e openat firefox</code></pre>
+      </section>
+
+
+      <section>
+        <h2>What is privacy?</h2>
+        <div class="container">
+          <p>
+            Privacy is the power to reveal yourself selectively - to choose what parts of your life others see and what
+            stays private. Without privacy, your autonomy disappears, leaving you vulnerable to control and
+            manipulation. Surveillance is not just watching; it's a form of power that restricts freedom and shapes
+            behavior.
+          </p>
+        </div>
+      </section>
+
+      <section data-auto-animate>
+        <div class="r-stack">
+          <img class="fragment"
+            src="https://www.privacypolicies.com/public/uploads/2022/07/european-tour-operators-association-contact-form-checkbox-highlighted.jpg"
+            height="500px" />
+          <img class="fragment"
+            src="https://www.businessbloomer.com/wp-content/uploads/2016/02/woocommerce-privacy-policy-checkbox-checkout.png"
+            height="400px" />
+          <img class="fragment"
+            src="https://cdn.websitepolicies.com/wp-content/uploads/2023/06/privacy-terms-separate-consent-checkboxes.png"
+            height="300px" />
+        </div>
+        <h3 class="fragment">Surveillance Capitalism</h3>
+      </section>
+      <section data-auto-animate>
+        <h3>Surveillance Capitalism</h3>
+        <div class="container">
+          <p>
+            Tech giants like Google, Meta, and Amazon aren't just offering services - they're extracting behavioral
+            surplus: data about your actions, preferences, and even intentions. This data isn't freely given - it's
+            mined silently as you move, search, and scroll. The more they know about you, the more precisely they can
+            predict and shape what you do next - not just to serve, but to sell, influence, and control.
+          </p>
+        </div>
+      </section>
+      <section data-auto-animate>
+        <h3>Surveillance Capitalism</h3>
+        <div style="margin-top: 2em; text-align: center;">
+          <iframe width="720" height="405" src="https://www.youtube.com/embed/hIXhnWUmMvw"
+            title="Shoshana Zuboff on Surveillance Capitalism" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          <p style="margin-top: 0.5em; text-align: center;"><small><a href="https://www.youtube.com/watch?v=hIXhnWUmMvw"
+                title="Shoshana Zuboff on Surveillance Capitalism" target="_blank">Shoshana Zuboff: Surveillance
+                Capitalism and the
+                Fight for a Human
+                Future</a></small></p>
+        </div>
+      </section>
+
+      <section data-auto-animate>
+        <h2>Take Back Control</h2>
+
+        <div class="container">
+          <ul>
+            <li class="fragment">Use <strong>Librewolf</strong> instead of Chrome or Firefox (de-googled, hardened)
+            </li>
+            <li class="fragment">Prefer <strong>XMPP</strong> or <strong>Matrix</strong> over WhatsApp and Telegram
+            </li>
+            <li class="fragment">Switch to <strong>Tutanota</strong> or <strong>ProtonMail</strong> for email</li>
+            <li class="fragment">Turn off <strong>location history</strong> and personalized ad tracking</li>
+            <li class="fragment">Use <strong>Linux</strong>. Seriously - it's your digital home, not theirs.</li>
+          </ul>
+        </div>
+      </section>
+      <section data-auto-animate>
+        <h2>Take Back Control</h2>
+        <div class="container">
+          <ul>
+            <li><a href="https://librewolf.net" target="_blank">librewolf.net</a></li>
+            <li><a href="https://xmpp.org" target="_blank">xmpp.org</a></li>
+            <li><a href="https://tutanota.com" target="_blank">tutanota.com</a></li>
+            <li><a href="https://www.privacytools.io" target="_blank">privacytools.io</a></li>
+            <li><a href="https://ssd.eff.org" target="_blank">ssd.eff.org</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section data-auto-animate>
+        <h2>Encrypt Everything</h2>
+        <p class="fragment"><strong>What it is:</strong> Encryption turns readable information (plaintext) into
+          unreadable data (ciphertext). It's math that protects your messages.</p>
+        <p class="fragment"><strong>Why it matters:</strong> Only the sender and intended recipient can read the
+          content. No one else - not your ISP, not Big Tech, not governments.</p>
+        <p class="fragment"><strong>How to do it:</strong> Use <strong>GPG (GNU Privacy Guard)</strong>, a free and
+          open-source encryption tool that lets you encrypt files, emails, and verify identity.</p>
+      </section>
+      <section data-auto-animate>
+        <h2>Encrypt Everything</h2>
+        <p class="fragment">GPG powers secure communication for developers, journalists, and activists. It's how you
+          protect your ideas, your identity, and your freedom.</p>
+        <p class="fragment">Learn more at <a href="https://gnupg.org" target="_blank">gnupg.org</a></p>
+      </section>
+      <section data-auto-animate>
+        <h2>Encrypt Everything</h2>
+
+        <div class="fragment">
+          <img src="images/email.jpg" alt="Email Screenshot"
+            style="height: 50vh; object-fit: contain; display: block; margin: 1em auto;" />
+        </div>
+      </section>
+      <section data-auto-animate>
+        <h2>Encrypt Everything</h2>
+
+        <pre class="fragment">
+          <code class="language-bash">gpg --full-generate-key</code>
+          <code class="language-bash">gpg -e -r contact@nnisarg.in secret.txt</code>
+          <code class="language-bash">gpg -d secret.txt.gpg</code>
+        </pre>
+      </section>
+
+      <section data-auto-animate>
+        <h2>Swatantra Software</h2>
+        <h3 class="fragment">Free as in Freedom</h3>
+
+        <p class="fragment">You deserve the right to study, change, and share your tools.</p>
+        <p class="fragment">Swatantra software is yours - not rented from Big Tech.</p>
+        <p class="fragment">It builds resilient communities.</p>
+      </section>
+      <section data-auto-animate>
+        <h2>Swatantra Software</h2>
+        <p class="fragment">Linux, LibreOffice, Firefox, Inkscape, Signal, F-Droid</p>
+
+        <p class="fragment" style="margin-top: 2em;">
+          Learn more: <a href="https://www.oreilly.com/openbook/freedom/"
+            target="_blank">oreilly.com/openbook/freedom</a>
+        </p>
+      </section>
+      <section data-auto-animate>
+        <h2>Swatantra Software</h2>
+
+        <div class="container">
+          <small>
+            <div class="col">
+              <p class="fragment"><strong>What is a GLUG?</strong></p>
+              <p class="fragment">
+                A <strong>GNU/Linux Users' Group (GLUG)</strong> is a community dedicated to promoting and supporting
+                <em>Swatantra (Free/Libre) Software.</em>
+              </p>
+
+              <p class="fragment">
+                GLUGs bring together enthusiasts, developers, and advocates to share knowledge, collaborate on projects,
+                and
+                spread awareness about free and open-source software.
+              </p>
+            </div>
+          </small>
+          <small>
+            <div class="col">
+              <p class="fragment">
+                Without a central authority, the GNU/Linux movement relies on local groups like Mumbai GLUG to drive
+                advocacy,
+                education, and user support - empowering individuals to take control of their computing.
+              </p>
+
+              <p class="fragment" style="margin-top: 2em;">
+                Join the community at <a href="https://mumbaiglug.org" target="_blank">mumbaiglug.org</a>
+              </p>
+            </div>
+          </small>
+        </div>
+      </section>
+
+      <section>
+        <h3>Self-Host and Reclaim Autonomy</h3>
+
+        <div class="container">
+          <div class="col fragment">
+            <img
+              src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fi.imgur.com%2Ffp4aCYPl.jpg&f=1&nofb=1&ipt=aea8d8dc322f1e5e8a5a8772aa1832a1f6be7988d631107e73f905db06c3c1e6"
+              alt="Server Rack" style="width: 100%; height: 80%; object-fit: cover">
+          </div>
+          <div class="col">
+            <p class="fragment">Host your own email, notes, RSS, and chat.</p>
+            <p class="fragment">Don't depend on centralized platforms.</p>
+            <p class="fragment">Even running a local Gitea or Nextcloud is a radical act.</p>
+          </div>
+        </div>
+      </section>
+
+      <section data-auto-animate>
+        <h2>Ethics in the Data Age</h2>
+
+        <p class="fragment">
+          In the data age, your technical choices shape lives. Whether you're writing code, training models, or
+          analyzing data-pause to consider the social consequences. Ethics isn't a constraint; it's a compass.
+        </p>
+      </section>
+      <section data-auto-animate>
+        <h2>Ethics in the Data Age</h2>
+
+        <p class="fragment">Just because you can, doesn't mean you should</p>
+
+        <p class="fragment">
+          Think before deploying a classifier, scraping user data, or optimizing engagement.
+        </p>
+        <p class="fragment">
+          Ethical dilemmas exist in AI, predictive policing, emotion detection, and more.
+        </p>
+
+        <p class="fragment">
+          <small>
+            Read: <a
+              href="https://andrewggibson.com/2023/10/20/the-trolley-problem-revisited-ethical-dilemmas-in-the-age-of-ai/"
+              title="The Trolley Problem Revisited: Ethical Dilemmas in the Age of AI" target="_blank">
+              The Trolley Problem Revisited: Ethical Dilemmas in the Age of AI
+            </a>
+          </small>
+        </p>
+      </section>
+
+      <section>
+        <h3>Don't Be A Product - Be A User</h3>
+
+        <p class="fragment">Learn deeply - not just tools, but the systems beneath them.</p>
+        <p class="fragment">Speak out for privacy, encryption, and digital rights.</p>
+        <p class="fragment">Build libre technology, not just profit-maximizing apps.</p>
+        <p class="fragment">Contribute to local communities like GLUGs and help others reclaim control.</p>
+      </section>
+
+      <section>
+        <h2>Any Questions?</h2>
+
+        <div class="container">
+          <div class="col"
+            style="display: flex; align-items: center; gap: 2em; flex-wrap: wrap; justify-content: center;">
+            <img src="images/qr.png" alt="QR Code to nnisarg.in"
+              style="width: 100%; aspect-ratio: 1; object-fit: contain;">
+          </div>
+          <div class="col">
+            <p><a href="https://nnisarg.in" title="Nnisarg's Personal Website" target="_blank">nnisarg.in</a></p>
+            <p><a href="https://nnisarg.in/github" title="Nnisarg's GitHub" target="_blank">nnisarg.in/github</a></p>
+            <p><a href="https://nnisarg.in/linkedin" title="Nnisarg's LinkedIn" target="_blank">nnisarg.in/linkedin</a>
+            </p>
+            <p><a href="mailto:contact@nnisarg.in" title="Nnisarg's Email" target="_blank">contact@nnisarg.in</a></p>
+            <small>
+              <p>This presentation is available at <a href="https://talks.nnisarg.in/invisible-you"
+                  title="Invisible You" target="_blank">talks.nnisarg.in/invisible-you</a></p>
+            </small>
+          </div>
+        </div>
+
+        <p style="text-align: center;">Thanks for listening - and happy hacking :D</p>
+      </section>
+
+    </div>
+  </div>
+  <!-- reveal.js and plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.2/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/plugin/search/search.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/plugin/notes/notes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/plugin/math/math.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/plugin/zoom/zoom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/customcontrols/plugin.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chalkboard/plugin.js"></script>
+  <script>
+    Reveal.initialize({
+      transition: 'concave',
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+      customcontrols: {
+        controls: [
+          {icon: '<i class="fa fa-pen-square"></i>', title: 'Toggle chalkboard (B)', action: 'RevealChalkboard.toggleChalkboard();'},
+          {icon: '<i class="fa fa-pen"></i>', title: 'Toggle notes canvas (C)', action: 'RevealChalkboard.toggleNotesCanvas();'}
+        ]
+      },
+      chalkboard: {},
+      plugins: [RevealHighlight, RevealSearch, RevealNotes, RevealMath.KaTeX, RevealZoom, RevealChalkboard, RevealCustomControls]
+    });
+    Reveal.configure({pdfSeparateFragments: false});
+  </script>
+</body>
+
+</html>
