@@ -26,7 +26,7 @@
       margin-bottom: 1.5em;
       color: #e7ad52;
     }
-    a {
+    .button {
       display: block;
       margin: 0.8em 0;
       color: #111;
@@ -38,18 +38,22 @@
       padding: 0.7em 1em;
       transition: background 0.3s, color 0.3s, transform 0.2s;
     }
-    a:hover {
+    .button:hover {
       background-color: #f2c46d;
       color: #000;
       transform: translateY(-2px);
+    }
+    a {
+      color: #f2c46d;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Connect with us</h1>
-    <a href="https://nnisarg.in/" target="_blank">Nnisarg Gada's Website</a>
-    <a href="https://linkedin.com/in/kirtanjthakkar/" target="_blank">Kirtan Thakkar on LinkedIn</a>
+    <a class="button" href="https://nnisarg.in/" target="_blank">Nnisarg Gada's Website</a>
+    <a class="button" href="https://linkedin.com/in/kirtanjthakkar/" target="_blank">Kirtan Thakkar on LinkedIn</a>
+    <small><a style="display: block; margin-top: 2em;" href="/" target="_blank">Back to Presentation</a></small>
   </div>
 </body>
 </html>
